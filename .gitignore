@@ -1,0 +1,148 @@
+# Configuration files with sensitive data
+.env
+config.local.conf
+*.conf.bak
+*_credentials.txt
+api_keys.txt
+telegram_token.txt
+
+# User data and credentials
+/etc/vpn-manager/users/*
+/etc/vpn-manager/credentials/*
+user_database.db
+*.pem
+*.key
+*.crt
+*.cert
+*.p12
+
+# Log files
+*.log
+/var/log/vpn-manager/*
+/etc/vpn-manager/logs/*
+error_log
+access_log
+
+# Backup files
+*.backup
+*.bak
+*.old
+/etc/vpn-manager/backups/*
+backup-*
+*.save
+*.swp
+*~
+
+# System files
+.DS_Store
+Thumbs.db
+.directory
+*.pid
+*.sock
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+cache/
+
+# Generated files
+*.generated
+*.auto
+auto-config/
+
+# Binary files
+*.exe
+*.bin
+*.so
+*.dll
+*.dylib
+
+# Package files
+*.deb
+*.rpm
+*.tar.gz
+*.zip
+*.rar
+
+# Development files
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env/
+.venv/
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+.project
+.settings/
+*.code-workspace
+
+# Test files
+test/
+tests/
+testing/
+*.test
+*.spec
+
+# Build files
+build/
+dist/
+*.o
+*.out
+
+# Local development files
+local/
+dev/
+development.conf
+
+# Certificates and keys
+ssl/
+certs/
+private/
+*.pem
+*.key
+*.csr
+*.crt
+*.cer
+*.der
+*.priv
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Monitoring and stats
+stats/
+monitoring/
+*.stat
+
+# Custom scripts that shouldn't be tracked
+custom/
+local-scripts/
+
+# Temporary VPN configs
+*.ovpn
+wg[0-9].conf
+v2ray_temp.json
+ss_temp.json
+client_configs/
+
+# System specific files that might contain sensitive data
+/etc/openvpn/
+/etc/v2ray/
+/etc/wireguard/
+/etc/shadowsocks-libev/
+/etc/stunnel/
+/var/www/html/monitor/
+/var/www/download/ 
